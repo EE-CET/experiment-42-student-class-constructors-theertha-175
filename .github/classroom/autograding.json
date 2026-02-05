@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Example 1",
+      "setup": "javac src/StudentClass.java",
+      "run": "java -cp src StudentClass",
+      "input": "Alice\n101\nBob\n102",
+      "output": "Name: Alice Roll: 101\nName: Bob Roll: 102",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Single Names",
+      "setup": "javac src/StudentClass.java",
+      "run": "java -cp src StudentClass",
+      "input": "John\n50\nJane\n60",
+      "output": "Name: John Roll: 50\nName: Jane Roll: 60",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Large Roll Numbers",
+      "setup": "javac src/StudentClass.java",
+      "run": "java -cp src StudentClass",
+      "input": "UserA\n99999\nUserB\n10000",
+      "output": "Name: UserA Roll: 99999\nName: UserB Roll: 10000",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    },
+    {
+      "name": "Mixed Case Names",
+      "setup": "javac src/StudentClass.java",
+      "run": "java -cp src StudentClass",
+      "input": "mARY\n1\npETER\n2",
+      "output": "Name: mARY Roll: 1\nName: pETER Roll: 2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 25
+    }
+  ]
+}
